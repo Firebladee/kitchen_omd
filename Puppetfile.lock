@@ -1,0 +1,16 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    puppetlabs-stdlib (4.9.0)
+
+GIT
+  remote: https://github.com/Firebladee/omd.git
+  ref: master
+  sha: 28ac7c215eea8ac21fac905eb3841abe72761402
+  specs:
+    omd (0.1.1)
+      puppetlabs-stdlib (>= 1.0.0)
+
+DEPENDENCIES
+  omd (>= 0)
+
