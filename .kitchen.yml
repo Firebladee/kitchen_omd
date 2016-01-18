@@ -11,19 +11,22 @@ provisioner:
   hiera_data_path: hieradata
 
 platforms:
-  - name: centos-6.6
-    driver_plugin: vagrant
+  - name: centos-6.6-64-nocm
+#    driver_plugin: vagrant
     driver_config:
       box: puppetlabs/centos-6.6-64-nocm
-#  - name: centos-7.0
+  - name: puppetlabs/centos-7.0-64-nocm
+#		driver_plugin: vagrant
+    driver_config:
+      box: puppetlabs/centos-7.0-64-nocm
+#			box_url: https://atlas.hashicorp.com/puppetlabs/boxes/centos-7.0-64-nocm
+  - name: puppetlabs/ubuntu-14.04-64-nocm
+    driver_config:
+      box: puppetlabs/ubuntu-14.04-64-nocm
+#  - name: debian-7.8-64-nocm
+#		driver_plugin: vagrant
 #    driver_config:
-#      box: puppetlabs/centos-7.0-64-nocm
-#  - name: ubuntu-14.04
-#    driver_config:
-#      box: puppetlabs/ubuntu-14.04-64-nocm
-#  - name: debian-7.8
-#    driver_config:
-#      box: puppetlabs/debian-7.8-64-nocm
+#      box: debian-7.8-64-nocm
 
 suites:
   - name: default

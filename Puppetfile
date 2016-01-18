@@ -3,20 +3,11 @@
 
 forge "https://forgeapi.puppetlabs.com"
 
+mod 'puppetlabs/ntp'
+mod 'gbrown/yumrepos'
 mod 'omd',
   :git => 'https://github.com/Firebladee/omd.git'
-# use dependencies defined in metadata.json
-#metadata
 
-# use dependencies defined in Modulefile
-# modulefile
-
-# A module from the Puppet Forge
-# mod 'puppetlabs-stdlib'
-
-# A module from git
-# mod 'puppetlabs-ntp',
-#   :git => 'git://github.com/puppetlabs/puppetlabs-ntp.git'
 
 # A module from a git branch/tag
 # mod 'puppetlabs-apt',
