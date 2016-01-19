@@ -5,18 +5,18 @@ FORGE
       puppetlabs-stdlib (>= 3.0.0)
     puppetlabs-ntp (4.1.2)
       puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
-    puppetlabs-stdlib (4.9.0)
+    puppetlabs-stdlib (4.11.0)
 
 GIT
   remote: https://github.com/Firebladee/omd.git
   ref: master
   sha: 28ac7c215eea8ac21fac905eb3841abe72761402
   specs:
-    omd (0.1.1)
+    firebladee-omd (0.1.1)
       puppetlabs-stdlib (>= 1.0.0)
 
 DEPENDENCIES
+  firebladee-omd (>= 0)
   gbrown-yumrepos (>= 0)
-  omd (>= 0)
   puppetlabs-ntp (>= 0)
 

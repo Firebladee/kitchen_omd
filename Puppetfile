@@ -5,7 +5,7 @@ forge "https://forgeapi.puppetlabs.com"
 
 mod 'puppetlabs/ntp'
 mod 'gbrown/yumrepos'
-mod 'omd',
+mod 'firebladee/omd',
   :git => 'https://github.com/Firebladee/omd.git'
 
 
