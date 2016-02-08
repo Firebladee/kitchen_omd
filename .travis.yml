@@ -1,4 +1,11 @@
 language: ruby
 rvm:
   - 2.0.0
-script: "rake spec"
+script: "rake spec SPEC_OPTS='--format documentation'"
+gemfile:
+  - Gemfile.travis
+install:
+  - bundle install
+  - rspec-puppet-init
+env:
+  - PUPPET_VERSION=3.2.4

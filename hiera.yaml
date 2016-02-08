@@ -4,5 +4,5 @@
 :yaml:
   :datadir: /tmp/kitchen/hiera
 :hierarchy:
-  - hosts/%{::fqdn}
+  - "node/%{::fqdn}"
   - common
