@@ -1,14 +1,11 @@
 ---
 driver:
   name: vagrant
-#  vagrantfiles:
-#    - Vagrant_Proxy.rb
 
 provisioner:
   name: puppet_apply
-  manifests_path: manifests
-  modules_path: modules
   hiera_data_path: hieradata
+  require_chef_for_busser: false
 
 platforms:
   - name: centos-6.6-64-nocm
@@ -30,3 +27,8 @@ suites:
     manifests: site.pp
     driver:
       vm_hostname: omd
+      network:
+        - ["forwarded_port", {guest: 80, host: 4567}]
+
+verifier:
+  ruby_bindir: '/usr/bin'

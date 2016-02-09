@@ -7,7 +7,7 @@ mod 'puppetlabs/ntp'
 mod 'gbrown/yumrepos'
 mod 'firebladee/omd',
   :git => 'https://github.com/Firebladee/omd.git'
-
+# mod 'puppetlabs/stdlib'
 
 # A module from a git branch/tag
 # mod 'puppetlabs-apt',
